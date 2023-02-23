@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   background-color: rgb(219, 182, 219);
   height: 500vh;
