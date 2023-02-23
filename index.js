@@ -52,10 +52,20 @@ const create = () => {
 
 
 const add = () => {
-	img.style.display = "none";
 
 	input1 = input.children[0].value;
 	input2 = input.children[1].value;
+
+	if (!input1) {
+		alert("Enter Task Name");
+		return;
+	}
+	else if (!input2) {
+		alert("Enter Task");
+		return;
+	}
+		
+	img.style.display = "none";
 
 	window.localStorage.setItem(input1, input2);
 	create();
