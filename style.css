@@ -66,6 +66,14 @@ h1 {
   justify-content: space-between;
 }
 
-.main{
-	padding: 5px;
+.btn2{
+	font-size: 300%;
+	margin-right: 5vw;
+	background-color: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+	border-radius: 100%;
+	padding: 0 10px;
 }
