@@ -15,13 +15,6 @@ const add = () => {
 	let body = document.createElement('p');
 	let btn = document.createElement('button');
 
-	btn.addEventListener('click', () => {
-		let child = disp.lastElementChild;
-		disp.removeChild(child);
-		if (disp.lastElementChild === img)
-			img.style.display = "flex";
-	})
-
 
 	main.style.padding = "5px";
 	btn.classList.add("btn2");
@@ -39,6 +32,15 @@ const add = () => {
 	main.children[0].textContent = input1;
 	main.children[1].textContent = input2;
 	disp.appendChild(task);
+
+	btn.addEventListener('click', () => {
+		let child = btn.parentElement;
+		disp.removeChild(child);
+		if (disp.lastElementChild === img)
+			img.style.display = "flex";
+	})
+
+
 	input.children[0].value = "";
 	input.children[1].value = "";
 }
