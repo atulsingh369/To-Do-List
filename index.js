@@ -2,14 +2,6 @@ const img = document.getElementById("img");
 const disp = document.getElementById("taskDisp");
 const input = document.getElementById("taskInput");
 
-const del = () => {
-	let child = disp.lastElementChild;
-	console.log(child);
-	disp.removeChild(child);
-	if (disp.lastElementChild === img)
-		img.style.display = "flex";
-}
-
 
 const add = () => {
 	img.style.display = "none";
@@ -22,6 +14,13 @@ const add = () => {
 	let head = document.createElement('h3');
 	let body = document.createElement('p');
 	let btn = document.createElement('button');
+
+	btn.addEventListener('click', () => {
+		let child = disp.lastElementChild;
+		disp.removeChild(child);
+		if (disp.lastElementChild === img)
+			img.style.display = "flex";
+	})
 
 
 	main.style.padding = "5px";
@@ -42,6 +41,4 @@ const add = () => {
 	disp.appendChild(task);
 	input.children[0].value = "";
 	input.children[1].value = "";
-	let child = disp.lastElementChild;
-	console.log(child);
-} 
+}
