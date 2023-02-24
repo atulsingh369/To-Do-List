@@ -4,4 +4,4 @@ A JS-based Algo for storing Daily Goals, using CRUD application and Local Storag
 
 Head over to following link for viewing live..
 
-<h1> https://atulsingh369.github.io/To-Do-List/ </h1>
+<h3> https://atulsingh369.github.io/To-Do-List/ </h3>
