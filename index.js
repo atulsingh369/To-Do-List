@@ -30,6 +30,7 @@ const create = () => {
 	})
 
 	main.style.padding = "5px";
+	main.style.overflow = "scroll";
 	btn.classList.add("btn2");
 	btn.textContent = "-";
 	task.classList.add("task");
