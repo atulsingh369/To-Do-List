@@ -82,3 +82,9 @@ h1 {
 	border-radius: 100%;
 	padding: 0 10px;
 }
+
+@media only screen and (max-width: 1000px){
+	img{
+		width: 30vw;
+	}
+}
